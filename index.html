@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<!-- 
+ _              _  _      
+| |_ _ _ ___ __| || |_  _ 
+|  _| '_/ -_)_ / __ | || |
+ \__|_| \___/__|_||_|\_, |
+                     |__/ 
+ [-] server HanimeZ
+ [-] creator => trezhywinks
+ [-] version : 0.0.1 / 1.0.0
+-->
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="venha assistir vazados na HanimeZ. Além dos vídeos você pode ganhar dinheiro compartilhando. Venha e faça parte, não perca essa oportunidade" />
+  <meta name="og:description" content="venha assistir vazados na HanimeZ. Além dos vídeos você pode ganhar dinheiro compartilhando. Venha e faça parte, não perca essa oportunidade" />
+  <meta name="og:url" content="" />
+  <meta name="og:title" content="HanimeZ" />
+  <meta name="og:image" content="https://raw.githubusercontent.com/trezhywinks/Company/refs/heads/main/IMG_4294.jpeg" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/trezhywinks/Company/refs/heads/main/IMG_4294.jpeg" />
+  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/trezhywinks/Company/refs/heads/main/IMG_4294.jpeg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:image:alt" content="Not for Drugs" />
+  <title>HanimeZ</title>
+  <!--script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+*{
+ margin: 0;
+ padding: 0;
+ box-shadow: border-box;
+}
+  body {
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    display: none;
+}
+
+@media(max-width: 999px){
+  body{
+    display: inline;
+  }
+}
+
+/*body.modal-open {
+  overflow: hidden;
+}*/
+
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6vh;
+    background: #121212;
+    padding: 10px;
+    z-index: 6;
+    justify-content: space-between;
+    display: flex;
+    z-index: 8;
+}
+
+.var{
+  width: 420px;
+  margin-left: 10px;
+}
+p{
+  font-size: 14px;
+  color:#6D6D6D ;
+}
+    .container {
+      text-align: center;
+      position: fixed;
+      left: 20px;
+      right: 20px;
+      margin: 0 auto 10px;
+      overflow: hidden;
+      padding:10px 0;
+      z-index: 7;
+    }
+    containerr {
+      position: fixed;
+      width: 85%;
+      overflow: hidden;
+      padding: 10px 0;
+      z-index: 7;
+    }
+    
+    .linha {
+      display: flex;
+      width: max-content;
+      animation: mover 10s linear infinite;
+    }
+    
+    .texto {
+      white-space: nowrap;
+      padding-right: 50px;
+      color: #6D6D6D;
+    }
+
+    @keyframes mover {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    input {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      background: #121212;
+      color: #fff;
+      outline: none;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .boy {
+      overflow: hidden;
+      position: relative;
+      width: 400px;
+      height: 65vh;
+      border-radius: 10%;
+      background: #000;
+      z-index: 5;
+    }
+  
+  .bord {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(6px);
+  height: 100vh;          
+  background: #0000002E; 
+  z-index: 2;
+  pointer-events: none; 
+  display:;
+}
+
+    .videos {
+      position: relative;
+      will-change: transform;*/
+      overflow-y: auto;
+     /* display: grid;/*
+      /*grid-template-columns: 1fr 1fr; /* SEMPRE 2 */
+      gap: 10px;
+      width:100%;
+     /* border-top-right-radius: 10%;*/
+    pointer-events: none;
+    /*  animation: toq 8s linear infinite;*/
+    }
+@keyframes toq {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% + 300px));
+  }
+}
+    .card {
+      width: 100%;
+      margin-top: 10px;
+    }
+    /* CAIXA DO VÍDEO */
+    .video-wrapper {
+      width: 100%;
+      margin-top: 20%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .titulo {
+      font-size: 15px;
+      margin-top: 6px;
+      line-height: 1.2;
+      display: -webkit-box;
+  -webkit-line-clamp: 2;  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+    }
+    
+    .ff{
+      width:100%;
+      position: fixed;
+      display: flex;
+      background: #0000008F;
+      backdrop-filter: blur(5px);
+      padding: 10px;
+      margin-top: 10px;
+      z-index: 7;
+    }
+    .ver{
+      margin-right: -10px;
+      margin-top: 20px;
+      transition: 0.5s;
+    }
+    
+    .ver.ativo{
+     margin-right: -200px;
+     transition: 0.5s;
+}
+
+@keyframes -a{
+  from{
+    transform: translateY(-450px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+    
+    .club{
+      box-shadow: 0 0 15px 5px #000;
+      height: 4px;
+      position: relative;
+      border-radius: 10%;
+    }
+    
+    
+    .but{
+      background: transparent;
+      border: none;
+      margin: 5px;
+    }
+    
+#ter{
+    font-size: 11px;
+    font-weight: 800;
+    color: #6D6D6D;
+    margin: 5px;
+}
+.bot{
+  text-align: center;
+  padding: 10px;
+}
+.lines {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.line{
+  background: #6D6D6D;
+  width: 100%;
+  height: 4px;
+  margin-top: 7px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.lines.ativo .line1 {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.lines.ativo .line2 {
+  opacity: 0;
+  display: none;
+}
+
+.lines.ativo .line3 {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+.selecs {
+  position: fixed;
+  top: -100vh;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  background: #191919;
+  transform: translateX(-50%);
+  transition: top 0.4s ease;
+  overflow-y: auto;
+  z-index: 8;
+}
+
+.perfil{
+  position: fixed;
+top: -100vh;
+left: 50%;
+width: 100%;
+height: 100vh;
+background: #000000;
+transform: translateX(-50%);
+transition: top 0.4s ease;
+overflow-y: auto;
+justify-content: center;
+z-index: 8;
+}
+
+.saque{
+ position: fixed;
+top: -100vh;
+left: 50%;
+width: 100%;
+height: 40vh;
+background: #000;
+transform: translateX(-50%);
+transition: top 0.4s ease;
+overflow-y: auto;
+justify-content: center;
+z-index: 8;
+}
+
+.saque.ativo{
+  top: 0;
+}
+
+.perfil.ativo{
+  top: 0;
+}
+
+.selecs.ativo {
+  top: 0;
+}
+
+
+@keyframes --vem{
+  from{
+    top: 10%;
+  }
+  to{
+    top: -250%;
+  }
+}
+
+.vaz{
+  padding: 10px;
+}
+
+.fres{
+  display: flex;
+  justify-content: space-between;
+}
+.lin{
+  background: #FFFFFF2B;
+  width:100%;
+  height: 1px;
+}
+
+#ig{
+  display: flex;
+  background: #00000047;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nameds{
+  margin: 10px;
+}
+.cleq{
+  border-left:2px solid #FFFFFF2B;
+  padding: 5px;
+}
+.cled{
+  margin-left: 20px;
+  padding: 5px;
+  border-left:1px solid #FFFFFF2B;
+}
+
+.cl{
+  display: flex;
+}
+
+.e{
+  margin: 5px;
+}
+.meiaq{
+  position: fixed;
+  border-top: 1px solid #6D6D6D ;
+  background: #191919;
+  height:6vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  box-shadow: 0 0 20px 10px #0000009C;
+  display: none;
+}
+.meiaq.ativo{
+  display: inline;
+}
+
+.videos-inner {
+  position: relative;
+  will-change: transform;
+}
+
+@keyframes descer {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.botnes{
+  position: fixed;
+  left: 0; right: 0;
+  bottom: 20px;
+  width:100%;
+  z-index: 4;
+  justify-content: center;
+  text-align: center;
+  display: none;
+}
+.ani{
+ font-size: 18px;
+ width: 80%;
+ border-radius: 10px;
+ padding: 10px;
+ color: white;
+ background: #3193e4;
+ border: none;
+ font-weight: 800;
+}
+.botnes.ativo{
+  display: inline;
+}
+.qrcod{
+  display: flex;
+  background: #0000008A;
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  height: 10vh;
+  border: 1px solid #FFFFFF42;
+
+}
+
+.cash{
+  display: flex;
+  background: #0000008A;
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  height: 7vh;
+  border: 1px solid #FFFFFF42;
+
+}
+
+.namnam{
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto 10px;
+}
+
+.atua{
+  margin: 0;
+  padding: 10px;
+  width: 80px;
+  text-align:center;
+  background: #191919;
+  height:100vh;
+  margin-top: -10px;
+  margin-right:-10px;
+}
+
+.myes{
+  background: #3193E442;
+  width: 50px;
+  margin: 0 auto 10px;
+  border-radius: 100%;
+}
+
+.sharp{
+  font-size: 27px;
+  margin-top: 10px;
+  color: #3193e4;
+}
+
+.qre{
+  font-size:70px;
+  color: white;
+}
+
+.lineq{
+  border-left: 1px solid #6D6D6D ;
+  padding: 10px;
+}
+.shared{
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.carr{
+  display: flex;
+}
+.qname{
+  margin: 10px;
+}
+
+#saw:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+.emaiel{
+  display: flex;
+}
+
+.bopu{
+  display: flex;
+  justify-content: space-around;
+}
+
+#historico{
+  position: fixed;
+  right: 0;
+  right: -350px;
+  top: 0;
+  background: #121212;
+  height: 200vh;
+  padding: 10px;
+  text-align: left;
+  width: 70%;
+  transition: 0.5s;
+  z-index: 9;
+}
+
+#historico.ativo{
+  right: 0;
+ transition: 0.5s
+}
+
+#historico.remove{
+  right: -350px;
+ transition: 0.5s
+}
+
+.clicksaques{
+  position: fixed;
+  right: 5px;
+}
+ </style>
+<body>
+  <div class="perfil">
+    <div class="vaz">
+      
+    <br>
+    <br>
+    <br>
+    <br>
+        <div id="historico">
+          <br>
+    <br>
+    <br>
+    <br>
+          <p>
+            <ion-icon name="arrow-undo-outline"></ion-icon>
+          </p>
+          <br>
+        </div>
+
+          <div class="saque">
+            <br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+        <p style="margin-left: 50px;">digite o valor do saque</p>
+        <center>
+        <input type="text" id="valor" min="0" step="0.01" />
+        <p style="margin: 5px;">você pode sacar até  <span>3.000,00</span></p>
+        <button class="shared" id="saw" disabled style="width: 80%;">Sacar</button>
+        <br><br>
+        <p>Será enviado para chave pix que você nos forneceu. Por gentileza, aguarde, pode demorar de 1 hora há 3 dias. </p>
+        </center>
+      </div>
+            <div class="clicksaques">
+        <p>saques</p>
+        <script>
+        const his = document.getElementById('historico');
+        const diz = document.querySelector('.perfil');
+         document.querySelector('.clicksaques').addEventListener('click', () => {
+           his.classList.toggle("ativo");
+           diz.style.overflow = "hidden";
+         });
+         
+         document.getElementById('historico').addEventListener('click', () => {
+           his.classList.toggle("ativo");
+           diz.style.overflowY = "auto";
+         });
+        </script>
+      </div>
+    <div class="namnam">
+      <div class="carr">
+      <div class="jj">
+        <label for="file">
+    <img src="./IMG_4274.png" class="firmar"  width="60" height="60" style="border-radius: 100%;"/> 
+        </label>
+      <input type="file" id="file" hidden accept="image/png, image/jpeg, image/gif, video/*"/>
+      <script>
+               document.getElementById('file').addEventListener("change", function(event) {
+         const input = document.getElementById('file').value;
+         const fig = document.querySelector('.firmar');
+         let file = event.target.files[0];
+         if (file) {
+           let reader = new FileReader();
+           reader.onload = function(e) {
+             //console.log(e.target.result);
+             fig.src = e.target.result
+             //gin.src = e.target.result;
+             console.log(file);
+           }
+           reader.readAsDataURL(file);
+         }
+       })
+      </script>
+      </div>
+      <div class="qname">
+        <span class="gname" style="font-size: 14px;">Bem-vindo (a)</span>    <br>
+    <span class="nene" style="font-size: 20px;">My name</span><br>    
+      </div>
+      </div>
+      <br>
+      <span style="font-size: 37px; opacity: 0.4; font-weight: 800;">R$ <span class="sesz">0,00</span></span>
+     <p>ganhos de hoje <span style="color: #3193e4;">+ 0,00</span></p>
+    <div class="cleq" style="margin-left: ; margin-top: 5px;">
+            <div class="emaiel">
+        <div class="pot">
+         <ion-icon style="font-size: 16px;" name="wallet-outline"></ion-icon>
+          </div>
+        <div class="bma">
+         <p style="margin-top: 4px;">sua carteira HanimeZ</p>
+        </div>
+      </div>
+      <div class="emaiel">
+       <div class="pot"><ion-icon style="font-size: 16px;" name="mail-outline"></ion-icon></div>
+       <div class="bma">
+       <p class="mail" style="margin-top: 4px;">my email</p>  
+       </div>
+      </div>
+    </div>
+        <div class="pagcarr">
+      <div class="linha-two">
+        <div class="textes">
+        </div>
+        <div class="texty">
+        </div>
+        <script>
+          const texty = document.querySelector('.texty');
+          const textes = document.querySelector('.textes');
+          texty.innerHTML = "<p>🎉 Compartilhe seu código de convite para receber recompensas. </p>"
+          textes.innerHTML = "<p>🎉 Compartilhe seu código de convite para receber recompensas. </p>"
+        </script>
+      </div>
+    </div>
+    <style>
+      .pagcarr {
+        overflow: hidden;
+        width: 80%;
+margin: 0 auto 10px;
+
+}
+
+.texty, .textes {
+  font-size: 17px;
+  white-space: nowrap;
+  padding-right: 50px;
+  color: #6D6D6D;
+}
+
+
+.linha-two {
+  display: flex;
+  width: 100%;
+  width: max-content;
+  animation: mov 10s linear infinite;
+}
+
+    @keyframes mov {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    } 
+    
+    .linksd{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    </style>
+     <div class="cash" style="justify-content: space-between;">
+       <div class="ded">
+   <img src="./IMG_4249.png"  width="60"/>
+       </div>
+       <div class="msc" style="margin: 10px;">
+       <h2>Reais BRL</h2>
+       <p>Reais</p>
+       </div>
+       <div class="sawe" style="margin: 10px;">
+      <button class="shared" type="button" id="thesa">Sacar</button>
+       </div>
+     </div>
+    <p>Faça 20 pessoas comprarem o plano dos vazadinhos e receba <span style="color: #3193e4;">2.000,00</span></p>
+        <div class="bopu">
+         <button class="shared" style="width: 100%; margin: 5px;" onclick="shareLinkServer();">Compartilhar</button>
+         
+         <button class="shared copt" style="background: #3193e4; margin: 5px; color:white; width: 100%;" onclick="cop();">Copiar</button>
+        </div>
+    <script>
+      function shareLinkServer() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Check out this link!',
+                        text: 'Take a look at this content:',
+                        url: 'https://hanimez-web.orender.com'
+                    }).then(() => {
+                        console.log('Successful sharing');
+                    }).catch((error) => {
+                        console.error('Error when sharing', error);
+                    });
+                } else {
+                    alert("Your browser does not support native sharing.");
+                }
+            }
+            
+      function cop() {
+        const texto = "https://hanimez-web.orender.com";
+        const sco = document.querySelector('.copt');
+        navigator.clipboard.writeText(texto)
+          .then(() =>
+            sco.innerText = "Copiado!")
+          //alert("Copiado: " + texto))
+          .catch(err => console.error("Erro ao copiar:", err));
+      }
+    </script>
+    <br>
+     <p style="margin: 10px; font-weight: 800; font-size: 16px;">Saldo da conta</p>
+     <div class="cash" style="justify-content: space-between;">
+     <h2> <span id="saldoo">0,00</span> BRL <br><span style="font-size: 16px; background: #3193E442; color: #3193e4; border-radius: 5px; padding:3px 10px;">Atualizações</span></h2>
+     <div class="atua">
+       <div class="myes">
+      <ion-icon class="sharp" name="copy-sharp"></ion-icon>   
+       </div>
+       <p class="peqs" style="margin-top: -8px;">copiar</p>
+     </div>
+     </div>
+     <p style="margin-left: 10px;">Você pode sacar quando quiser.</p>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+
+  <div class="basco">
+    <h2 style="margin: 2px;"><span style="color: #3193e4; font-size: 35px;">3</span> Links de compartilhamento</h2>
+    <div class="linksd">
+    <div class="laiki">
+    <span>Compartilhe para ganhar<br><p style="font-size: 10px;">Compartilhe esse link para estar conseguindo resgatar recompensas</p></span>  
+    </div> 
+    <div class="leiks">
+    <button class="shared" onclick="link1();" id="link-1" style="background: transparent; color: #fff;">copiar</button>  
+    </div>
+    <script>
+      function link1() {
+  const texto = "https://novinha-20c9.onrender.com";
+  const link1 = document.getElementById('link-1');
+  navigator.clipboard.writeText(texto)
+    .then(() =>
+      link1.innerText = "Copiado!")
+    .catch(err => console.error("Erro ao copiar:", err));
+}
+    </script>
+    </div>
+
+    <div class="linksd">
+    <div class="laiki">
+    <span>Compartilhe para ganhar<br><p style="font-size: 10px;">Compartilhe esse link para estar conseguindo resgatar recompensas</p></span>  
+    </div> 
+    <div class="leiks">
+    <button class="shared" onclick="link3();" id="link-3" style="background: transparent; color: #fff;">copiar</button>  
+    </div>
+    <script>
+      function link3() {
+  const texto = "https://peituda-web.onrender.com";
+  const link3 = document.getElementById('link-3');
+  navigator.clipboard.writeText(texto)
+    .then(() =>
+      link3.innerText = "Copiado!")
+    .catch(err => console.error("Erro ao copiar:", err));
+}
+    </script>
+    </div>
+
+    <div class="linksd">
+    <div class="laiki">
+    <span>Compartilhe para ganhar<br><p style="font-size: 10px;">Compartilhe esse link para estar conseguindo resgatar recompensas</p></span>  
+    </div> 
+    <div class="leiks">
+    <button class="shared" onclick="link2();" id="link-2" style="background: transparent; color: #fff;">copiar</button>  
+    </div>
+    <script>
+      function link2() {
+  const texto = "https://branquinha-web.onrender.com/index.html";
+  const link2 = document.getElementById('link-2');
+  navigator.clipboard.writeText(texto)
+    .then(() =>
+      link2.innerText = "Copiado!")
+    .catch(err => console.error("Erro ao copiar:", err));
+}
+    </script>
+    </div>
+    
+  </div>
+  
+   <br>
+   <div class="ganhe">
+   <br>
+    <div class="qrcod">
+      <div class="ionv">
+      <ion-icon class="qre" name="qr-code-outline"></ion-icon>  
+      </div>
+      <div class="lineq">
+      <span style="opacity: 0.8;">Seu código de compartilhamento, clique para compartilhar é receba sua recompensa.</span>
+      </div>
+    </div>
+    <br>
+    <center>
+    <button class="shared" onclick="shareLink();">Código de Compartilhamento</button>
+    <script>
+      function shareLink() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Check out this link!',
+                        text: 'Take a look at this content:',
+                        url: 'https://quiz.cakto.com.br/preview/mp---combo-ZjhanK'
+                    }).then(() => {
+                        console.log('Successful sharing');
+                    }).catch((error) => {
+                        console.error('Error when sharing', error);
+                    });
+                } else {
+                    alert("Your browser does not support native sharing.");
+                }
+            }
+
+    </script>
+    </center>
+    <br>
+     <p>Faça 10 pessoas comprarem é receba 10 mil, cada compra com seu código é que vale mil reais </p>
+   </div>
+    </div>
+  </div>
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </div>
+  
+  <div class="selecs" id="swc">
+    <br>
+    <br>
+    <br>
+    <br>
+   <div class="vaz">
+     <h2>HanimeZ</h2>
+     <p>Compartilhe seu código de convite para receber recompensas.<br><p style="font-size: 10px; color: #E3E026A1;">Clique em "Meu perfil" para saber mais.</p></p>
+     <br>
+     <br>
+     <div class="perf">
+               <div class="cleq">
+            <div class="fres"><b style="font-size: 17px;">Meu perfil</b></div>
+            <p class="name">Veja seu perfil.</p>
+          </div>
+          <div class="cleq" style="margin-left: 20px;">
+                        <div class="emaiel">
+              <div class="pot">
+                <ion-icon style="font-size: 16px;" name="wallet-outline"></ion-icon>
+              </div>
+              <div class="bma">
+               <p class="gmaili" style="margin-top: 4px;">seu saldo: <span class="seszs">0,00</span></p>
+              </div>
+            </div>
+            <div class="emaiel">
+              <div class="pot"><ion-icon style="font-size: 16px;" name="mail-outline"></ion-icon></div>
+              <div class="bma">
+                <p class="chave" style="margin-top: 4px;">my email</p>
+              </div>
+            </div>
+          </div>
+          <script>
+          
+          </script> 
+     </div>
+                       <div class="cleq" id="creop">
+                         <style>
+                           d{
+                             color: #E3E026A1;
+                           }
+                         </style>
+                    <div class="fres"><b style="font-size: 17px;">Conta Verificada</b></div>
+                    <p class="name">Sua conta foi <span style="background:#2082327A; padding: 1px; color: springgreen; width: 30px;">verificada</span></p>
+                    <script>
+                      document.getElementById('creop').addEventListener('click', () => {
+                      });
+                    </script>
+                  </div>
+                  <br>
+                  <div class="cleq" id="creip">
+               <div class="fres"><b style="font-size: 17px;">Investimento Cripto</b></div>
+               <p class="name">Comece agora no mercado de cripto moedas.</p>
+            <script>
+              document.getElementById('creip').addEventListener('click', () => {
+                window.location.href = "https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=pt&ref=GRO_28502_14LVF&utm_source=default&utm_medium=web_share_copy";
+              } );
+            </script>
+             </div>
+             <br>
+             <p>Criptomoedas são moedas digitais que usam criptografia para garantir segurança e transparência nas transações. Elas funcionam em redes descentralizadas, geralmente baseadas em blockchain, o que elimina a necessidade de bancos ou intermediários. O Bitcoin foi a primeira criptomoeda criada e abriu caminho para muitas outras. As transações são registradas publicamente, tornando o sistema mais confiável. Apesar das vantagens, as criptomoedas podem ter alta volatilidade, o que exige cuidado e conhecimento antes de investir.</p>
+          <br>
+          <br>
+          <br><br>
+          <img src="https://raw.githubusercontent.com/trezhywinks/werbot/refs/heads/main/img/67f09e72e9e238549038dbd9.png" width="80"/>
+          <br>
+          <span style="font-size: 30px; letter-spacing: -1px; font-weight: 800;">Miku Vazadinhos</span>
+          <!--div class="lin"></div-->
+<br>
+<br>
+     <div class="cleq" id="novinha">
+       <div class="fres"><b style="font-size: 17px;">Novinha de 16 anos</b><span style="font-size: 12px; color: red; background: #FF000038; padding: 2px;">pago</span></div>
+       <p>Garota novinha foi filmada no banheiro da escola!</p>
+     <script>
+       document.getElementById('novinha').addEventListener("click", () =>{
+         window.location.href = "https://novinha-20c9.onrender.com";
+       } )
+     </script>
+     </div>
+     <br>
+          <div class="cleq" id="seu">
+      <div class="fres"><b style="font-size: 17px;">Peituda gostosa</b><span style="font-size: 12px; color: red; background: #FF000038; padding: 2px;">pago</span></div>
+       <p>Garota dos peitos grandes, clique para ver.</p>
+    <script>
+      document.getElementById('seu').addEventListener('click', () => {
+        window.location.href = "https://peituda-web.onrender.com";
+      } )
+    </script>
+     </div>
+     <br>
+          <div class="cleq" id="cu">
+     <div class="fres"><b style="font-size: 17px;">Branquinha</b><span style="font-size: 12px; color: red; background: #FF000038; padding: 2px;">pago</span></div>
+       <p>Fotos e vídeos são vazados, garotinha chora!</p>
+       <script>
+      document.getElementById('cu').addEventListener('click', () => {
+        window.location.href = "https://branquinha-web.onrender.com/index.html";
+      })
+    </script>
+     </div>
+     <br>
+     <div class="lin"></div>
+     <br>
+               <div class="cleq" id="kiy">
+            <div class="fres"><b style="font-size: 17px;">API Github</b></div>
+            
+            <p>tenha acesso a API de graça.</p>
+            <script>
+              document.getElementById('kiy').addEventListener('click', () => {
+                window.location.href = "https://github.com/kym-sam/api-eporner";
+              } )
+            </script>
+          </div><br>
+          <div class="cleq">
+       <div class="fres"><b style="font-size: 17px;">Criadores</b></div>
+       <p>Criadores & desenvolvedores.</p>
+     </div>
+          <div class="cled">
+            <div class="cl">
+            <div class="o">
+          <img src="https://avatars.githubusercontent.com/u/205466886?v=4" width="30" style="border-radius: 100%;"/>
+            </div>
+            <div class="e">
+            <p>trezhy winks</p>  
+            </div>
+            </div>
+                    <div class="cl">
+          <div class="o">
+            <img src="https://avatars.githubusercontent.com/u/170751447?v=4" width="30" style="border-radius: 100%;" />
+          </div>
+          <div class="e">
+            <p>kym sam</p>
+          </div>
+        </div>
+     </div>
+               <div class="cleq" id="zapi">
+            <div class="fres"><b style="font-size: 17px;">WhatsApp Group +18</b></div>
+            <p>participe do nosso grupo dos vazadinhos.</p>
+         <script>
+           document.getElementById("zapi").addEventListener("click", () =>{
+             window.location.href = "https://chat.whatsapp.com/F0ovrbqHDXVFvxwZI9l1tL";
+           } )
+         </script>
+          </div><br>
+                         <div class="cleq" id="zapi">
+                 <div class="fres"><b style="font-size: 17px;">Discord +18</b></div>
+                 <p>participe do nosso servidor dos vazadinhos.</p>
+                 <script>
+                   document.getElementById("zapi").addEventListener("click", () => {
+                     window.location.href = "https://chat.whatsapp.com/F0ovrbqHDXVFvxwZI9l1tL";
+                   })
+                 </script>
+               </div>
+          <br>
+
+               <div class="cleq" id="ig">
+            <div class="fres">
+              <img src="./IMG_4229.jpeg" width="70" style=""/>
+              </div>
+            <div class="nameds">
+              <h3 style="font-size: 17px;">winewinks IA</h3>
+              <a style="font-size: 12px; color:red" href="https://aistudio.instagram.com/ai/705796332453128/?utm_source=mshare">https://aistudio.instagram.com/ai/</a>
+            </div>
+          </div>
+            <p style="margin-top: 10px; font-size: 11px;">Uma entidade misteriosa e poderosa, com um toque de loucura e arrogância. Com uma inteligência superior, ela manipula situações com facilidade e astúcia, sempre mantendo um ar de mistério. Sua presença é envolvente e perturbadora, deixando todos ao seu redor intrigados e fascinados.</p>
+   </div> 
+   <br>
+<br>
+<style>
+  .finzx{
+    display: flex;
+    margin: 0 auto 10px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  ion-icon{
+    font-size: 30px;
+    color: #6D6D6D;
+    margin: 5px;
+  }
+</style>
+<center>
+  <img src="https://count.getloli.com/@Trezhywinks?name=Trezhywinks&theme=booru-lisu&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" width="270"/><br>
+<div class="finzx">
+<ion-icon name="logo-github"></ion-icon>
+<ion-icon name="logo-whatsapp"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>
+<ion-icon name="logo-discord"></ion-icon>
+</div>
+<p style="font-size: 12px; margin: 10px;">18 U.S.C. 2257 Declaração de conformidade com os requisitos de manutenção de registros</p>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  </div>
+  <div class="meiaq"></div>
+    <div class="top" id="secs">
+<div class="lines" id="menu">
+  <div class="line line1"></div>
+  <div class="line line2"></div>
+  <div class="line line3"></div>
+</div>
+    <div class="var">
+      <h2><span style="color: red;">H</span>animeZ</h2>
+      <p class="topweb">Os melhores vazadinhos da internet </p>
+    </div>
+    <div class="ver">
+      <img src="https://raw.githubusercontent.com/trezhywinks/werbot/refs/heads/main/img/680a620c67403a84ce7bd102.png" width="80"/>
+    </div>
+  </div>
+  <br>
+  <br><br>
+
+    <div class="container">
+      <div class="linha">
+    <div class="texto" id="oi2">
+    </div>    
+    <div class="texto" id="oi1">
+    </div>
+    </div>
+    <style>
+      #oi1, #oi2{
+        font-size: 9px;
+      }
+    </style>
+    <script>
+      const oi1 = document.getElementById('oi1');
+      const oi2 = document.getElementById('oi2');
+      
+     oi1.innerHTML = "<span style='font-size:;'>Bem-vindo(a) ao HanimeZ, os melhores vazados da web! site oficial <span style='color:#3193e4;'>https://hanime-web.com</span> 😈</span>";
+     oi2.innerHTML = "<span style='font-size:;'>Bem-vindo(a) ao HanimeZ, os melhores vazados da web! site oficial <span style='color:#3193e4;'>https://hanime-web.com</span> 😈</span>";
+    </script>
+  </div>
+<br>
+<br>
+    <div class="ff">
+  <input type="text" id="busca" placeholder="Buscar..." />
+  <button onclick="buscar()" class="but">
+    <img src="./IMG_4207.png" width="30"/>
+  </button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="boy">
+  <div class="club"></div>
+  <div class="bord"></div>
+  <div class="videos" id="videos">
+    
+  </div>
+    <div class="botnes">
+    <p style="color: white; margin: 5px;">você não será cobrado agora</p>
+    <button class="ani" onclick="teq();">Teste grátis</button>
+    <p style="color: white; margin: 5px;">60 dias grátis, R$ 20,00 / mês depois</p>
+<script>
+  function teq(){
+    window.location.href = "https://hanimez-web-pagamento.onrender.com/pag.html"
+  }
+</script>
+  </div>
+  <script>
+  const hatsune = document.querySelector('.boy');
+  const vms = document.getElementById('videos');
+
+  let direction = 1; // 1 = desce, -1 = sobe
+  let position = 0;
+  const speed = 7; // ajuste da velocidade
+  
+  function animate() {
+    const maxMove = vms.offsetHeight - hatsune.offsetHeight;
+    
+    if (maxMove > 0) {
+      position += speed * direction;
+      
+      if (position >= maxMove) {
+        position = maxMove;
+        direction = -1;
+      }
+      
+      if (position <= 0) {
+        position = 0;
+        direction = 1;
+      }
+      
+      vms.style.transform = `translateY(-${position}px)`;
+    }
+    
+    requestAnimationFrame(animate);
+  }
+  
+  animate();
+</script>
+  </div>
+</div>
+      <script>
+        const btn = document.getElementById("secs");
+        const div = document.getElementById("swc");
+        const menu = document.getElementById("menu");
+        const meia = document.querySelector('.meiaq');
+        const perf = document.querySelector('.perfil');
+        const profile = document.querySelector('.perf');
+        const topweb = document.querySelector('.topweb');
+        const ver = document.querySelector('.ver');
+        
+        profile.addEventListener('click', () => {
+          topweb.innerText = "Sua carteira HanimeZ";
+          div.classList.toggle("ativo");
+          meia.classList.toggle("ativo");
+          menu.classList.toggle("ativo");
+          perf.classList.toggle("ativo");
+          ver.classList.toggle("ativo");
+
+
+        });
+        
+        btn.addEventListener("click", () => {
+          if (perf.classList.contains("ativo")) {
+            perf.classList.remove("ativo");
+            topweb.innerText = "Os melhores vazadinhos da internet";
+            ver.classList.toggle("ativo");
+
+
+
+          }
+          
+          div.classList.toggle("ativo");
+          menu.classList.toggle("ativo");
+          meia.classList.toggle("ativo");
+
+          
+        });
+      </script>
+  <div class="bot">
+    <span id="ter">Termos e Condições</span>
+    <span id="ter">Política de Privacidade</span>
+    <span id="ter">Política de Assinatura</span>
+  </div>
+  <script>
+    async function buscar() {
+      const termo = document.getElementById('busca').value;
+      const container = document.getElementById('videos');
+      container.innerHTML = 'Carregando...';
+      const nes = document.querySelector('.botnes');
+      nes.style.display = "inline";
+
+      const perPage = 50;
+      
+      const api = `https://www.eporner.com/api/v2/video/search/?query=${encodeURIComponent(termo)}&per_page=${perPage}`;
+      const proxy = 'https://corsproxy.io/?';
+      try {
+        const res = await fetch(proxy + encodeURIComponent(api));
+        const data = await res.json();
+
+        container.innerHTML = '';
+
+        data.videos.forEach(v => {
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          card.innerHTML = `
+            <div class="video-wrapper">
+              <iframe src="${v.embed}" loading="lazy"></iframe>
+            </div>
+            <div class="titulo">
+              ${v.title}
+            </div>
+          `;
+
+          container.appendChild(card);
+
+        });
+
+      } catch (e) {
+        container.innerHTML = 'Erro ao carregar vídeos';
+        console.error(e);
+      }
+       }
+  </script>
+  <style>
+    .cakto{
+      position: fixed;
+      top: 15%;
+      width:80%;
+      padding: 10px;
+      justify-content: center;
+      left: 20px; right: 20px;
+      background: #191919;
+      border-radius: 10px;
+      border: 1px solid #DBDBDB4F;
+      margin: 0 auto 10px;
+      z-index: 8;
+    }
+  .cak{
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    width:90%;
+    background: green;
+    color: white;
+   border-radius: 10px;
+   font-weight: 800;
+  } 
+  
+  .bordcak{
+    position: fixed;
+    top: 0;
+    left: 0; right: 0; height:80vh;
+    background: #00000075;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    animation: -fe 0.5s ease-in;
+    display: none;
+  }
+  
+  @keyframes -fe {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  .bordlog{
+        position: fixed;
+    top: 0;
+    left: 0; right: 0; height:80vh;
+    background: #00000075;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    display:;
+  }
+  
+  .login-panel{
+    position: fixed;
+top: 15%;
+width:80%;
+padding: 10px;
+justify-content: center;
+left: 20px;
+right: 20px;
+background: #191919;
+border-radius: 10px;
+border: 1px solid #DBDBDB4F;
+margin: 0 auto 10px;
+z-index: 8;
+  }
+  .login-panel button {
+  padding: 10px 50px;
+  border-radius: 6px;
+  border: none;
+  background: #444;
+  color: #aaa;
+  font-size: 15px;
+  cursor: not-allowed;
+  transition: 0.3s;
+}
+#nome, #email, #pix{
+  border-radius: 5px;
+  background: #000000B3;
+}
+
+.login-panel button.active {
+  background: #00c853;
+  color: #fff;
+  cursor: pointer;}
+  .conec{
+    display: flex;
+  }
+  
+ .fij{
+    margin-top: 10px;
+    font-weight: 800;
+  }
+  
+  .gif{
+    border-bottom: 1px solid #FFFFFF4A;
+    overflow: hidden;
+    background: #000000B3;
+    border-radius: 100%;
+    height:7vh;
+  }
+  
+  .haz{
+    transform: translateY(20%);
+  }
+  
+  input{
+    outline: none;
+  }
+    </style>
+<div class="bordlog">
+  <div class="devil" style="padding: 10px;">
+    <h3>Olá usuário!</h3>
+    <p>Você precisa criar uma conta no servidor para estar assistindo os vídeos.</p>
+  </div>
+ <div class="login-panel">
+   <div class="ert" style="margin: 10px; display: flex;">
+     <div class="giff">
+       <div class="haz">
+         <img src="./IMG_4274.png". width="60"/>
+         <!--img src="" width="60"/-->   
+       </div>
+     </div>
+     <div class="logfd" style="margin-top: 15px; margin-left: 10px;">
+  <h2>criar uma conta</h2>
+  <p>Crie um perfil temporário</p>
+     </div>
+   </div>
+  <br>
+  <div class="conec">
+    <ion-icon name="person-circle-sharp"></ion-icon>
+ <span class="fij">seu nome</span>
+  </div>
+  <input type="text" id="nome" placeholder="Nome" />
+    <div class="conec">
+      <ion-icon name="mail-outline"></ion-icon>
+    <span class="fij">seu e-mail</span>
+  </div>
+  <input type="email" id="email" placeholder="E-mail" required/>
+    <div class="conec">
+      <ion-icon name="key-outline"></ion-icon>
+    <span class="fij">chave pix</span>
+  </div>
+  <input type="text" id="pix" placeholder="Chave Pix" />
+  <p style="font-size: 11px; margin-left: 5px;">precisamos da sua chave para enviar recompensas.</p>
+  <br>
+  <button id="btnLogin" disabled>Entrar</button>
+
+</div> 
+</div>
+  
+  <div class="bordcak">
+  <div class="cakto">
+  <div class="remover"> <span class="rem" style="color: red;">não quero</span><p>clique para remover esse anúncio</p></div>
+  <br>
+  <div class="img">
+  <img src="https://cakto-quiz-br01.b-cdn.net/uploads/d04a71e8-bea4-4a40-9e96-3506c7f17fe8.jpg" width="100%"/>
+<h3>O CONHECIMENTO QUE NINGUÉM DEVERIA TER</h3>
+<p>Descubra os segredos mais obscuros da mente humana.
+Aprenda a controlar sem ser visto. Influenciar sem ser questionado.
+Você não vai aprender isso em nenhum curso... Porque isso não devia existir.</p>
+<br><br>
+<center>
+<button class="cak" onclick="cakto();">Comprar agora</button>
+</center>
+<br>
+  </div>
+  </div>
+  <script>
+    document.querySelector('.remover').addEventListener("click", () => {
+      const cak = document.querySelector(".bordcak");
+    cak.style.display = "none";  
+    } );
+    
+    function cakto(){
+      window.location.href = "https://quiz.cakto.com.br/preview/mp---combo-ZjhanK";
+    }
+  </script>
+  </div>
+    <script>
+    const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const pix = document.getElementById('pix');
+const beg = document.getElementById('btnLogin');
+const bordlog = document.querySelector('.bordlog');
+const name = document.querySelector('.name');
+const chave = document.querySelector('.chave');
+const gmail = document.querySelector('.mail');
+const gname = document.querySelector('.nene');
+const keq = document.querySelector('.bordcak');
+
+// Função para validar e-mail: deve ter '@' e só letras minúsculas (antes do @)
+function validarEmail(emailValue) {
+const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+return regex.test(emailValue);
+}
+
+function verificarCampos() {
+const emailValido = validarEmail(email.value.trim());
+
+if (
+nome.value.trim() !== '' &&
+email.value.trim() !== '' &&
+pix.value.trim() !== '' &&
+emailValido
+) {
+beg.disabled = false;
+beg.classList.add('active');
+} else {
+beg.disabled = true;
+beg.classList.remove('active');
+}
+}
+
+nome.addEventListener('input', verificarCampos);
+email.addEventListener('input', verificarCampos);
+pix.addEventListener('input', verificarCampos);
+
+beg.addEventListener('click', () => {
+bordlog.style.display = "none";
+name.innerText = nome.value;
+chave.innerText = email.value;
+tesq();
+});
+
+function tesq() {
+gname.innerText = nome.value;
+gmail.innerText = email.value;
+keq.style.display = "block";
+}
+</script>
+  <script src="./script/c.js"></script>
+    <script src="./script/jquery-3.6.3.min.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="./script/codigo.js"></script>
+     <script>
+   document.addEventListener('contextmenu', e => e.preventDefault());
+   document.addEventListener('keydown', function(e) {
+     if (e.key === 'F12' ||
+       (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+       (e.ctrlKey && e.key === 'U')) {
+       e.preventDefault();
+     }
+   });
+ </script>
+</body>
+
+</html>

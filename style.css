@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15pt;
+    background: #000;
+    display: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6vh;
+    background: #121212;
+    padding: 10px;
+    z-index: 6;
+}
+.button{
+    background: darkred;
+    color: #fff;
+    width: 90%;
+    padding: 10px;
+    border-radius:10px;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+    font-weight: 800;
+    box-shadow: 1px 1px 10px 3px red;
+    animation: --ha 3s infinite linear;
+}
+
+.pi{
+  background: transparent;
+color: #fff;
+width: 90%;
+padding: 10px;
+border-radius:10px;
+font-size: 17px;
+border: 1px solid #3193e4;
+text-align: center;
+font-weight: 800;
+}
+
+.po{
+    background:#3193e4;
+color: #fff;
+width: 90%;
+padding: 10px;
+border-radius:10px;
+border: none;
+font-size: 17px;
+text-align: center;
+font-weight: 800;
+}
+
+.v{
+    position: absolute;
+    margin-top: -26px;
+}
+
+@keyframes --ha{
+    from{
+        box-shadow: 1px 1px 10px 4px red;
+        transition: 0.5s;
+    }
+    to{
+        box-shadow: 1px 1px 10px 3px red;
+
+    }
+}
+
+p{
+    color: #6D6D6D;
+    font-size: 14px;
+}
+
+.log{
+    position: absolute;
+    margin-top: 1px;
+    z-index: 5;
+}
+
+.bot{
+    text-align: center;
+    padding: 10px;
+}
+#ter{
+    font-size: 11px;
+    font-weight: 800;
+    color: #6D6D6D;
+    margin: 5px;
+}
+
+@media(max-width:999px){
+    body{
+        display: inline;
+    }
+}
+
+.server{
+    display: ;
+}
+
+.pag{
+    text-align: center;
+}
+
+.qil{
+    padding: 10px;
+    text-align: left;
+}
+
+.fi{
+    margin: 10px;
+    font-size: 16px;
+}
+.sa{
+    background: #1C8C3A52;
+    color: green;
+    padding: 4px 8px;
+    border-radius: 50px;
+}
