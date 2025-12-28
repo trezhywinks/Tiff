@@ -589,6 +589,20 @@ z-index: 8;
             <br>
             <br>
             <br>
+                   <div class="defc" style="display: flex;">
+         <div class="d">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+         </div>
+       <div class="ba" style="margin-left: 10px; margin-top:15px;">
+      <p style="font-size: 16px;">Voltar</p>   
+       </div>
+            </div>
+            <script>
+            const sedq = document.querySelector('.saque');
+             document.querySelector('.defc').addEventListener('click', () => {
+           sedq.classList.toggle("ativo");  
+             } )
+            </script>
             <br><br>
             <br>
         <p style="margin-left: 50px;">digite o valor do saque</p>
